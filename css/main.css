@@ -1,0 +1,966 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4; }
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ==========================================================================
+                               Global
+========================================================================== */
+
+* {
+    box-sizing: border-box;}
+
+body {
+  background-color:#0c0c0c;
+  font-family:helvetica;}
+
+   /* @keyframes bg-change {
+      0% { border-right: .2em #3E55FF solid; }
+      25% { border-right:.2em #FF5CBD solid; }
+      50% { border-right: .2em#D754E8 solid; }
+      75% { border-right: .2em#BB69FF solid; }
+      100% { border-right: .2em#7354E8 solid; }
+  }*/
+
+p, a {
+  font-size: 14px;
+  
+  line-height: 1.5;
+  color:#f9f9f9;
+  letter-spacing: 1.5px}
+
+
+
+p, li {
+  font-weight: 500;}
+
+a {
+  font-weight: regular;}
+
+h1 {
+  font-size: 48px;
+  line-height: 1.5em;
+  color: #f9f9f9;}
+
+h2 {
+  font-size: 48px;
+  font-family: avenir;
+  letter-spacing: 2.5px;}
+
+h3 {
+  color:white;
+  letter-spacing: 2px;
+  line-height: 1.4;
+  font-family:'avenir';}
+
+h4 {
+  font-size: 18px;
+  font-family: avenir-bookoblique;
+  letter-spacing: 1.5px;
+  color:#f9f9f9;
+  opacity:.4;}
+
+h5 {
+  font-size: 16px;
+  font-family: avenir-bookoblique;
+  margin-bottom:1.5em;
+  color:#f9f9f9;
+  opacity:.4;}
+
+li {
+  list-style: none;
+  font-size:14px;
+  color:#f9f9f9;
+  line-height: 2;
+  margin-bottom:.5em;
+  
+}
+
+ul {
+  padding: 0;}
+
+/* Classes */
+
+.avenir-heavy {
+  font-family: avenir-heavy;}
+
+.avenir-black {
+  font-family: avenir-heavy;}
+
+.avenir-medium {
+  font-family: avenir-medium;}
+
+.opacity-40 {
+  opacity:.40;}
+
+.opacity-75 {
+  opacity:.75;}
+
+.flex {
+  display: flex; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column; }
+
+.space-between {
+  justify-content: space-between; }
+
+.space-around {
+  justify-content: space-around; }
+
+.align-center {
+  align-items: center; }
+
+.justify-center {
+  justify-content: center; }
+
+.flex-1 {
+  flex:1;}
+
+.center {
+  text-align: center; }
+
+.bold {
+  font-weight: bold; }
+
+.light {
+  font-weight: 1; }
+
+.A2 {
+  animation: line 1.7s ease-in-out; }
+
+.glyphicon-download {
+  padding-left: .5em;
+  top: 3px; }
+
+.rotate90 {
+  transform: rotate(90deg); }
+
+.clearfix {
+  clear: both; }
+
+.purple-bg {
+  background: #7b539a !important; }
+
+iframe {
+  margin: 1em; }
+
+.inline-link a {
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+                               Animations
+========================================================================== */
+
+/*.A-down {
+  animation: A-down 1.4s ease-in-out; }
+
+.A-up {
+  animation: A-up 1s ease-in-out; }
+
+  .A-up2 {
+    animation: A-up .8s ease-in-out; }
+
+.A-side {
+  animation: A-side 1s ease-in-out;}*/
+
+.linedown {
+  animation: linedown .8s ease-in-out;
+}
+
+@keyframes A-down {
+  from {
+    opacity: 0;
+    top: -5em;
+   }
+  to {
+    opacity: 1;
+    top: 0em;
+   }
+  }
+
+
+
+
+
+
+/* ==========================================================================
+                                    Main Wrapper- Home
+========================================================================== */
+
+#main-wrapper, #project-wrapper, #home-wrapper {
+  background-color: #0c0c0c;
+  text-align:center;
+  /*border-left:.2em white solid;*/
+  /*border-right:.2em white solid;*/
+  height:100vh;}
+
+  .davids-touch {
+    background-image: url('../img/davids_touch_2.svg');
+    background-size: contain;
+    background-repeat: no-repeat;}
+
+
+/* ==========================================================================
+                                    Header - Home
+========================================================================== */
+
+.site-title {
+  padding:2em;
+}
+
+
+.logo {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  text-align: center;
+  flex-direction: column;
+  position:relative;}
+
+header {
+  padding:2em;
+}
+
+#Layer_1 {
+  width:20px;
+  margin-bottom: 1.5em;}
+
+/* ==========================================================================
+                                  Main Content - Home
+   ========================================================================== */
+
+   .main-content {
+  text-align:center;
+}
+
+.matthew-crowe {
+  font-size:48px;
+  height: 40vh;
+  padding-top:1em;
+  justify-content: center;}
+
+.vr-content img {
+  width:100px;
+}
+
+.featured-work {
+  font-weight: bolder;
+}
+
+.vr-content {
+  margin-top:8em;
+  
+}
+
+.category {
+  margin-bottom:4em;
+  position: relative;}
+
+.category ul {
+  height:200px;}
+
+.underline {
+  background: #f9f9f9;
+  opacity:.10;
+  height:1px;
+  width: 100%;}
+
+.line {
+  width: 1px;
+  height: 40px;
+  background: #f9f9f9;
+  margin-right:1em;
+  display: none;}
+
+.link-btn {
+  border-radius: 4px;
+  margin-bottom: 1.5em;
+  padding: 1em;
+  box-shadow: 0 0 10px 2px black;
+  transition:1s;
+}
+
+.link-btn:hover {
+  box-shadow:none;
+
+}
+
+/* ==========================================================================
+                                  Main Nav - Home
+   ========================================================================== */
+
+nav  {
+  position: sticky;
+  transform:translateY(-100px);
+  top: 0;
+  background: #0E0E0E;
+  z-index:2;
+  text-align: center;}
+
+.shadow {
+  /*box-shadow:0 0 4px 0 black;*/
+  transition:.4s;
+  transform:translateY(0);
+}
+
+.nav-link {
+  position:inherit;
+  transition:none;
+  padding: 0;
+  display: inline-block;
+}
+
+
+/*.nav-link>hover {
+  position:inherit;
+  transition:none;
+  padding: 0;
+}*/
+
+.col-sm-6 {
+  margin-bottom:2em;
+}
+
+.container {
+  max-width:100%;
+  padding:2em;}
+
+/* ==========================================================================
+                                  Project Page
+   ========================================================================== */
+
+.temp-bg {
+  width:50%;
+  min-width:500px;
+}
+
+.project-logo-wrapper {
+  margin-right:80%;}
+
+.project-header h1 { 
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+  padding-top: 15%;}
+
+
+.description h3 {
+  margin-top:2em;
+  margin-bottom:4em;
+  color:#f9f9f9;
+  display: flex;
+  align-items: center;}
+
+.description {
+  margin-bottom:4em;
+  padding-bottom:4em;
+  padding-top:4em;
+  /*background:black;*/
+}
+
+/*.guideline {
+  width:75px;
+  height: 1px;
+  background: #f9f9f9;
+  margin:0 auto;
+  transform:rotate(90deg);}*/
+
+
+ /*.featured-img {
+ background-image: url("../img/campaign_poster_ty.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+  padding-top:4em;}*/
+
+.summary {
+  border-bottom: 1px solid;
+  margin-bottom:10em;}
+
+.summary ul {
+  height:100px;}
+
+.tile {
+  margin-bottom:4em;}
+
+.slideup {
+  transform:translateY(50px);
+  transition: all .8s ease-out;
+  opacity:0;}
+
+.slideup.show {
+  opacity:1;
+  transform:translateY(0);
+}
+
+
+.p-img img {
+  width:100%;}
+
+.p-img p {
+  margin-bottom:6em;}
+
+.social {
+  width: 25px;
+  margin-right: .5em;
+}
+
+.bg-black {
+  background:black;
+}
+
+.copyright {
+  padding-top:2em;
+}
+
+
+footer {
+  padding-top: 2em;
+  }
+
+.footer-navbar img {
+  width:15px;
+  position:relative;
+  bottom:2px;
+}
+
+
+  .footer-navbar {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding:2em;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bio-link {
+    margin: 14px 16px;
+  }
+  
+  .a-link {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    margin: 14px 16px;
+    text-decoration: none;
+    
+  }
+
+  .bio {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    margin: 14px 16px;
+    text-decoration: none;
+    opacity:50;
+  }
+
+/* ==========================================================================
+                               Main - Resume
+========================================================================== */
+
+.mobile-padding {
+  padding-right: 1em;
+  padding-left: 1em; }
+
+.PDF {
+  margin-top: 4em;
+  text-align: center; }
+  .PDF a {
+    font-size: 20px;
+    margin-bottom: 1em; }
+
+.resume-row li {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+  /* ==========================================================================
+                                 Animation Classes
+  ========================================================================== */
+
+.show {
+  opacity:1;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers
+ */
+.hidden {
+  display: none !important; }
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+.invisible {
+  visibility: hidden; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+
+
+
+/* ============================ NON MOBILE NON MOBILE NON MOBILE NON MOBILE NON MOBILE NON MOBILE NON MOBILE   ================ *
+/* ============================ NON MOBILE NON MOBILE NON MOBILE NON MOBILE NON MOBILE NON MOBILE NON MOBILE   ================ *
+/* ============================ NON MOBILE NON MOBILE NON MOBILE NON MOBILE NON MOBILE NON MOBILE NON MOBILE   ================ */
+
+@media only screen and (min-width: 48em) {
+
+  .link-btn {
+    border-radius: 0;
+    margin-bottom: .5em;
+    padding: inherit;
+    box-shadow: none;
+    transition:1s;
+  }
+
+  .link {
+  position: relative;
+  padding-bottom:.5em;
+  transition: .4s;}
+
+
+  .link:hover {
+    transition: .5s;
+    text-decoration: none;
+  /*color:#6B6B6B !important;*/
+    animation: color-change 5s infinite;
+    color:#f9f9f9; }
+    
+   /* @keyframes color-change {
+      0% { color:#3E55FF; }
+      25% { color:#FF5CBD; }
+      50% { color:#D754E8; }
+      75% { color:#BB69FF; }
+      100% { color:#7354E8; }
+  }*/
+
+  .bio-link:hover {
+    color:#f9f9f9;}
+
+  .link::before {
+    content: '';
+    position: absolute;
+    bottom: -10%;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    /*background:#cfde1c;*/
+    background:#f9f9f9;
+    -webkit-transform-origin: right top;
+    -ms-transform-origin: right top;
+    transform-origin: right top;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: transform 0.4s cubic-bezier(.8, 0, 0, 1);
+    transition: transform 0.4s cubic-bezier(.8, 0, 0, 1)}
+
+  .link:hover::before {
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1)}
+
+
+  /* ==========================================================================
+                                      Main Wrapper- Home
+  ========================================================================== */
+
+  .nav {
+    padding-top:1.5em;
+    padding-bottom:1.5em;
+  }
+
+  .davids-touch {
+    background-image: url('../img/davids_touch_2.svg');
+    background-size: contain;
+    background-position:center;
+    background-repeat: no-repeat;
+    padding-top:10em;
+    height:100vh;}
+
+  .container {
+    max-width:500px;
+    padding:0;}
+
+  .container-2 {
+    text-align:center;
+    max-width:850px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;}
+
+  #main-wrapper {
+    height: 100vh;
+    text-align:center;
+    background-image: url('../img/campaign_poster_ty.png');
+    background-size:cover;}
+
+  #project-wrapper, #home-wrapper {
+    text-align: left;}
+
+  /* ==========================================================================
+                                      header - Home
+  ========================================================================== */
+
+
+  header {
+    padding-top:2em;
+    padding-bottom:4em;
+  }
+
+  .logo {
+    height: 30vh;}
+
+  .site-title {
+    position: fixed;
+    transform: rotate(270deg);
+    color: white;
+    bottom: 5em;
+    font-size: 24px;
+    font-stretch: 2em;
+    letter-spacing: .2em;
+    padding:0;}
+
+  .site-title .line {
+    top: 1.5em;
+  }
+
+  /* ==========================================================================
+                                    Main Content - Home
+     ========================================================================== */
+
+  /*.main-content {
+    padding:0;}*/
+
+  /*.main-content .category {
+    padding-left:4em;
+  }*/
+
+  .category li a {
+    color:#f9f9f9;}
+
+  .category li:hover>a {
+    color:#f9f9f9;
+    transition:.5s;}
+
+  .matthew-crowe {
+    font-size:36px;
+    height: 45vh;
+    padding-top:1em;}
+
+  .underline {
+    display:none;}
+
+  .footer-navbar {
+    justify-content: flex-end;
+  }
+
+  /* ==========================================================================
+                                    Project Page
+     ========================================================================== */
+
+  .project-title {
+    position: fixed;
+    transform: rotate(270deg);
+    color: white;
+    bottom: 5em;
+    font-size: 18px;
+    font-stretch: 2em;
+    letter-spacing: .2em;
+  }
+
+  .line {
+    display: inherit;
+    width: 1px;
+    height: 40px;
+    background: #f9f9f9;
+    transform: rotate(90deg);
+    position: relative;
+    top: 1.8em;
+    right: 2em;
+  }
+
+  .project-header h4 {
+    padding-bottom:5em;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 0 auto;}
+
+
+  .description .col-sm-3 {
+    padding-left: 4em;
+    padding-right:4em;
+  }
+
+  .summary {
+    display: flex;
+    justify-content: space-around;}
+
+  .summary ul {
+    height:100px;}
+
+  .tile {
+    margin:0 auto;
+    margin-bottom:6em;}
+
+  .p-img {
+    margin:0 auto;
+    margin-bottom:6em;
+    box-shadow: 0 0 10px 4px black;}
+
+  .p-img img {
+    max-width:1260px;
+    margin:0 auto;
+    border-radius:4px;
+    }
+
+  .p-img p {
+    width:50%;
+    margin:0 auto;
+    margin-bottom:6em;
+    display: none;}
+
+  .project-footer {
+    padding:4em;
+  }
+
+
+
+  /*footer ul {
+    display:flex;
+    height: 30vh;
+    justify-content: space-between;
+    align-items: center;
+  }*/
+
+@media only screen and (min-width: 70em) {
+  /* ==========================================================================
+                                    Main Content - Home
+     ========================================================================== */
+
+  .main-Content {
+    padding-top:4em;
+    max-width: 1260px;
+    margin:0 auto;}
+
+
+
+   } /* -- END of min width 70em -- */
+
+
+@media only screen and (min-width: 86em) {
+
+  .project-nav {
+      padding:5em 10em;}
+}
+
+
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */ }
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  *:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
+       http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: ""; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group; }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+
+/*# sourceMappingURL=main.css.map */
+  }
